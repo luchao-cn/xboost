@@ -6,4 +6,24 @@
     <version>0.01</version>
   </parent>
   <artifactId>xboost-web</artifactId>
+  
+  <properties>
+		<thymeleaf.version>3.0.0.RELEASE</thymeleaf.version>
+		<thymeleaf-layout-dialect.version>2.0.0</thymeleaf-layout-dialect.version>
+	</properties>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>org.xboost</groupId>
+			<artifactId>xboost-service</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- Thymeleaf -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+	</dependencies>
 </project>
