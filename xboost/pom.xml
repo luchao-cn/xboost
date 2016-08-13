@@ -6,5 +6,7 @@
   <packaging>pom</packaging>
   <modules>
   	<module>xboost-domain</module>
+  	<module>xboost-web</module>
+  	<module>xboost-service</module>
   </modules>
 </project>
