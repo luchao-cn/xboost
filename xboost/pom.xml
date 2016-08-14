@@ -7,10 +7,10 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>xboost-domain</module>
-		<module>xboost-web</module>
 		<module>xboost-service</module>
+		<module>xboost-web</module>
 	</modules>
-	
+
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -21,4 +21,35 @@
 		<version>1.4.0.RELEASE</version>
 	</parent>
 
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>spring-releases</id>
+			<url>https://repo.spring.io/libs-release</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-releases</id>
+			<url>https://repo.spring.io/libs-release</url>
+		</pluginRepository>
+	</pluginRepositories>
 </project>
