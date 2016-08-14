@@ -1,0 +1,24 @@
+<ion-side-menus enable-menu-with-back-views="false"> <!-- left menu -->
+<ion-side-menu side="left"> <ion-content
+	style="background-image: url('/images/aa.jpg') no-repeat; background-size:100%">
+
+<ul class="list">
+	<!-- Note each link has the 'menu-close' attribute so the menu auto closes when clicking on one of these links -->
+	<a href="#/main/mall" class="item positive-bg" menu-close>商城</a>
+	<a href="#/main/phones" class="item positive-bg" menu-close>手机</a>
+	<a href="#/main/member" class="item positive-bg" menu-close>会员</a>
+	<a href="#/main/textInput" class="item positive-bg" menu-close>文本框</a>
+</ul>
+</ion-content> </ion-side-menu> <!-- main content --> <ion-side-menu-content>
+<ion-nav-bar class="bar-positive"> <ion-nav-back-button>
+</ion-nav-back-button> <ion-nav-buttons side="left">
+<button class="button button-icon button-clear ion-navicon"
+	menu-toggle="left"></button>
+</ion-nav-buttons> <ion-nav-buttons side="right">
+<button class="button button-icon button-clear ion-gear-b"
+	menu-toggle="right"></button>
+</ion-nav-buttons> </ion-nav-bar> <ion-nav-view name="mainContent"></ion-nav-view> <ion-footer-bar
+	class="bar-assertive"> </ion-footer-bar> </ion-side-menu-content> <!-- right menu --> <ion-side-menu
+	side="right"> </ion-side-menu> </ion-side-menus>
+
+
