@@ -43,7 +43,7 @@ app.controller('mallController', function($scope) {
 	});
 });
 
-app.controller('memberController', function($scope, $http, $stateProvider, $location) {
+app.controller('memberController', function($scope, $state) {
 	$scope.menus = [];
 
 	for (var i = 0; i < 10; i++) {
@@ -77,7 +77,8 @@ app.controller('memberController', function($scope, $http, $stateProvider, $loca
 			if (!menu.isLeaf) {
 				$scope.expandedMenu = menu;
 			} else {
-				$stateProvider.state.go("main");
+				$state.go('main.phones');
+				// $stateProvider.state.go("main");
 			}
 		}
 	}

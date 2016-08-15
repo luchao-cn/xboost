@@ -18,7 +18,7 @@
         </div> ng-class="{'item-icon-rigth' : true}"
       </ion-list>
    -->
-
+<a href="#/main/textInput" class="item positive-bg" menu-close>文本框</a>
 <div class="list">
 	<div ng-repeat="menu in menus">
 		<div class="item item-icon-left"
@@ -30,12 +30,14 @@
 
 		<div class="item item-icon-left"
 			ng-repeat="child in menu.children" ng-show="isExpanded(menu)"
-			ng-click="touch(child)">
+			ng-click="touch(child)"
+			ui-sref='main'>
 			<i class="icon {{child.iconCls}}"></i>
 			<h2>{{child.name}}</h2>
 		</div>
 	</div>
 </div>
+
 <!-- 
 <div class="item item-stable item-icon-left item-icon-right"
 	ng-click="toggleGroup(menu)" ng-class="{active: isGroupShown(menu)}">
